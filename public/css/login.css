@@ -1,0 +1,40 @@
+body {
+    background-image: url('./images/celebrate-celebration-communication-296878.jpg');
+    font-family: 'Comfortaa', cursive;
+}
+.img-thumbnail {
+    margin: 1%;
+}
+h2 {
+    font-family: 'Pacifico', cursive;
+    margin-left: 25%;
+    color: rgb(41, 145, 50);
+    padding: 1%;
+}
+.container {
+    background-color: rgb(255, 255, 255);
+    margin: 1%;
+    padding-bottom: 1%;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 6px;
+}
+form {
+    margin-left: 10%;
+}
+#userLoginButton, #userSignUpButton {
+    margin-top:2%;
+    margin-left: 28%;
+    margin-bottom: 1%;
+    background-color: rgb(41, 145, 50);
+    color: white;
+}
+#userLoginButton:hover, #userSignUpButton:hover {
+    background-color: rgb(16, 77, 29); 
+}
+label {
+    font-size: 105%;
+    color: rgb(20, 14, 14);
+}
+label.error {
+    color: red;
+}

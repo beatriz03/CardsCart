@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/index.css"/>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  <!-- React -->
+  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+
+  <title>Cards Cart</title>
+</head>
+
+<body>
+  <div class="parallax"></div>
+  <div id="loginContainer"></div>
+  <!-- Logo in 1st area -->
+  <div class='container navbarDiv'>
+    <div class="mx-auto" style="width: 250px;">
+      <a href='/login.html'>
+        <img src="./css/images/cardsCartLogo.jpg" alt="Logo" class="img-thumbnail">
+      </a>
+    </div>
+
+        <!-- Nav Bar -->
+    <nav>
+        <div class="nav-wrapper brand-logo center">
+          <ul id="nav-mobile">
+            <li><a href="#" id='viewContacts'>View My Contacts</a></li>
+            <li><a href="#viewCategoriesJump" id='viewCategories'>View Categories</a></li>
+            <li><a href="#" id='viewCart'>View Cart</a></li>
+            <li><div><a class="waves-effect waves-light btn" id='signOutButton' a href='/login.html'>Sign Out</a></div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+
+    <h2 class='welcome'>Welcome!</h2><a id='newContactJump'></a>
+
+    <!-- User clicks "view contacts nav" -->
+      <div class='container viewContactsDiv'>
+        <h2>Contacts</h2>
+        <div class='row'>
+          <div class='col s4'>
+            <div class="card" style="width: 18rem;">
+              <div class='card-header'>
+                Who: Mom
+              </div>
+              <span class="list-group list-group-flush">
+                <li class="list-group-item">Birthday: 01/09/1970</li>
+                <li class="list-group-item">Address: 123 Main St, Boston, MA 02101</li>
+                <li class="list-group-item">Additional Notes: Favorite color is red</li>
+              </span>
+            </div>
+            <div><a class="waves-effect waves-light btn showsContactFormBtn">Add New Contact</a></div>
+  
+          </div>
+  
+          <div class='col s4'>
+            <div class="newCard" style="width: 18rem;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  
+  <div class="parallax"></div>
+  <!-- Form to add new contact -->
+  <div class='container addContactFormDiv'>
+    <h2>Add New Contact</h2><a id='contactFormJump'></a>
+    <form class='col addContactForm' method='post'>
+      <div class="form-row">
+        <div class="form-group col-md-5">
+          <label for="inputName"><strong>Name:</strong></label>
+          <input type="text" name="inputName" id="inputName">
+        </div>
+        <div class="form-group col-md-4">  
+          <label for="inputBirthday"><strong>Birthday MM/DD/YYYY:</strong></label>
+          <input type="text" name="inputBirthday" id="inputBirthday">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-9">
+          <label for="inputAddress"><strong>Mailing Address:</strong></label>
+          <input type="text" name="inputAddress" id="inputAddress">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <label for="inputCity"><strong>City:</strong></label>
+          <input type="text" name="inputCity" id="inputCity">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputState"><strong>State:</strong></label>
+          <input type="text" name="inputState" id="inputState">
+        </div>
+        <div class="form-group col-md-2">
+          <label for="inputZip"><strong>Zip:</strong></label>
+          <input type="text" name="inputZip" id="inputZip">
+        </div>
+      </div>
+      <div class='form-row'>
+        <div class='form-group col-md-9'>
+          <label for="inputNotes"><strong>Additional Notes:<strong></label>
+          <textarea name="inputNotes" id="inputNotes" rows="3"></textarea>
+        </div>
+      </div>
+        <div><a class="waves-effect waves-light btn submitContactButton">Submit New Contact</a></div>
+    </form>
+  </div>
+
+
+
+  <!-- View Categories List -->
+  <div class='container cardsDiv categoriesDisplay'>
+      <h2>Categories</h2>
+
+    <div class='row'>
+          <div class='col-sm'>
+          <a href id="7" class='categoryLink'>Birthday</a><br>
+          <a href id="8" class='categoryLink'>Congratulations</a><br>
+          <a href id="28" class='categoryLink'>Customizable Cards</a><br>
+          <a href id="11" class='categoryLink'>Encouragement/Condolences</a><br>
+        </div>
+
+        <div class='col-sm'>
+          <a href id="15" class='categoryLink'>Everyday</a><br>
+          <a href id="17" class='categoryLink'>Father's Day</a><br>
+          <a href id="125" class='categoryLink'>For Business</a><br>
+          <a href id="18" class='categoryLink'>Graduation</a><br>
+        </div>
+
+          <div class='col-sm'>
+          <a href id="12" class='categoryLink'>Happy Holidays</a><br>
+          <a href id="5" class='categoryLink'>Just For Fun</a><br>
+          <a href id="16" class='categoryLink'>Mother's Day</a><br>
+          <a href id="14" class='categoryLink'>New Baby</a><br>
+        </div>
+
+          <div class='col-sm'>
+          <a href id="40" class='categoryLink'>Real Estate</a><br>
+          <a href id="6" class='categoryLink'>Thank you</a><br>
+          <a href id="178" class='categoryLink'>Thanksgiving</a><br>
+          <a href id="10" class='categoryLink'>Valentine's Day/Love<br></a><a id='viewCategoriesJump'></a>
+        </div>
+
+        </div>
+      </div>
+
+
+        <!-- Populated cards will appear here -->
+        <div class='container cardDisplay'>
+            <div class='row'>
+              <div class='col well' id='cardWell'></div>
+            </div>
+        </div>
+ 
+
+<!-- View Cart -->
+  <div class='container entireShoppingCartDiv'>
+      <h2>Shopping Cart</h2>
+    <div class='row'>
+      <div class='col viewCartDiv'>
+      
+     </div>
+
+     <div class='col'>
+
+        <form class='shippingInfoForm'>
+          <h3 style="text-align:center"><strong>Shipping Information:</strong></h5><br>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="shippingName"><strong>Name:</strong></label>
+              <input type="text" name="shippingName" id="shippingName">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-12">
+              <label for="shippingAddress"><strong>Mailing Address:</strong></label>
+              <input type="text" name="shippingAddress" id="shippingAddress">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label for="shippingCity"><strong>City:</strong></label>
+              <input type="text" name="shippingCity" id="shippingCity">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="shippingState"><strong>State:</strong></label>
+              <input type="text" name="shippingState" id="shippingState">
+            </div>
+            <div class="form-group col-md-3">
+              <label for="shippingZip"><strong>Zip:<strong></label>
+              <input type="text" name="shippingZip" id="shippingZip">
+            </div>
+          </div>
+        </form>
+
+<div class='totalPrice'>
+    <h3 style="text-align:center"><strong>Order Total:</strong></h3><br>
+        <h5 class='col-md-6 cartSubTotalDisplay'>Subtotal: </h5>
+        <h5 class='col-md-6'>Shipping: Free!</h5><hr>
+        <h4 class='col-md-6 cartTotalDisplay'><strong>Total: </strong></h4><br>
+        <div class='shippingSummary'></div>
+
+        <div><a class="waves-effect waves-light btn purchaseButton modal-trigger mx-auto" data-target="modal1" disabled>Purchase</a></div>
+
+</div>
+
+     </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- React Modal appears after purchase -->
+  <div id="modal1" class="modal" style='width:50%;'>
+      <div id="app"></div>
+
+  <script type='text/babel'>
+  class App extends React.Component {
+    render() {
+      return(
+        <div>
+        <div className="modal-content app-content">
+          <h2 className='modalBanner'>Thank you for your purchase!</h2>
+          <h4 className='cartTotalDisplay mx-auto'></h4>
+          <div className='shippingSummary modalShippingSummary'><h6>Your order will be shipped to:</h6></div>
+          <h6 className='modalSubBanner'>Please allow 5-7 business days for arrival.</h6>
+        </div>
+        <div><a href="#" class="modal-close waves-effect waves-light btn">Back To Home</a></div>
+        </div>
+      )
+    }
+  }
+ReactDOM.render(<App />, document.getElementById('app'));
+</script>
+</div>
+
+
+<!-- JQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!-- JQuery-Validator Plug In -->
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<!-- JavaScript -->
+<script src='./js/index.js'></script>
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>

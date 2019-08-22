@@ -1,0 +1,137 @@
+html {
+    scroll-behavior: smooth;
+    background-color: rgb(250, 250, 250);
+}
+.parallax {
+    background-image: url('./images/celebrate-celebration-communication-296878.jpg');
+    min-height: 200px; 
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.img-thumbnail {
+    margin-bottom: 2%;
+}
+nav .nav-wrapper {
+    height:0;
+}
+
+
+#signOutButton{
+    background-color: rgb(41, 145, 50);
+    color: white;
+    border-radius: 6px; 
+}
+#signOutButton:hover{
+    background-color: rgb(16, 77, 29); 
+    color: white;
+}
+a.btn  {
+    background-color: rgb(41, 145, 50);
+    color: white;
+    border-radius: 6px; 
+}
+a.btn:hover {
+    background-color: rgb(16, 77, 29); 
+    color: white;
+}
+h2 {
+    font-family: 'Pacifico', cursive;
+    color: rgb(41, 145, 50);
+    padding: 2%;
+    text-align: center;
+    padding-bottom: 3%;
+}
+.container {
+    margin: 1%;
+    padding-bottom: 1%;
+    font-family: 'Comfortaa', cursive;
+    border-radius: 6px;
+}
+
+
+/* Contacts Div */
+.card {
+    margin:3%;
+}
+#addContactDivBtn {
+    margin-left: 11%;
+}
+.showsContactFormBtn{
+    margin-left: 9%;
+    color: white;
+}
+.submitContactButton {
+    margin-left: 27%;
+    color: white;
+}
+.addContactForm {
+    margin-left: 11%;
+}
+a.delete {
+    margin-left: 16%;
+}
+label {
+    font-size: 100%;
+    color: rgb(20, 14, 14);
+}
+
+
+/* Categories Div */
+.categoryLink {
+    font-size: 105%;
+    color: rgb(41, 145, 50);
+}
+.well {
+    margin-left:35%;
+}
+.cardDisplay img {
+    width:30%;
+}
+.addToCartBtn{
+    margin-bottom: 5%;
+}
+label.error {
+    color: red;
+}
+
+
+
+/* Cart Div */
+.shippingInfoForm {
+    margin-bottom: 10%;
+}
+.viewCartDiv img {
+    width:60%;
+}
+.shoppingCartDeleteBtn {
+    margin-bottom: 3%;
+}
+.totalPrice {
+    margin-top: 12%;
+}
+
+/* Modal */
+.modalBanner {
+    color: rgb(41, 145, 50);
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+}
+
+.modalSubBanner, .modalShippingSummary {
+    font-family: 'Comfortaa', cursive;
+    text-align: center;
+}
+
+.modal-close {
+    background-color: rgb(41, 145, 50);
+    color:white;
+    margin-left: 39%;
+    margin-top: 1%;
+}
+
+.modal-close:hover, .modal-close:visited {
+    background-color: rgb(16, 77, 29);
+}
